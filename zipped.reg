@@ -1,0 +1,55 @@
+Windows Registry Editor Version 5.00
+
+; Zipped File Archiver - Registry Installation
+; Double-click this file to install Windows integration
+; IMPORTANT: Edit the path below to match your zipped.exe location
+
+; ==============================================================================
+; .zipped File Association
+; ==============================================================================
+
+[HKEY_CLASSES_ROOT\.zipped]
+@="ZippedArchive"
+
+[HKEY_CLASSES_ROOT\ZippedArchive]
+@="Zipped Archive"
+
+[HKEY_CLASSES_ROOT\ZippedArchive\DefaultIcon]
+@="C:\\Program Files\\Zipped\\zipped.exe,0"
+
+[HKEY_CLASSES_ROOT\ZippedArchive\shell\open]
+@="Extract with Zipped"
+
+[HKEY_CLASSES_ROOT\ZippedArchive\shell\open\command]
+@="\"C:\\Program Files\\Zipped\\zipped.exe\" \"%1\""
+
+; ==============================================================================
+; Right-Click Context Menu for Files
+; ==============================================================================
+
+[HKEY_CLASSES_ROOT\*\shell\ZippedCompress]
+@="Compress with Zipped"
+"Icon"="C:\\Program Files\\Zipped\\zipped.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\ZippedCompress\command]
+@="\"C:\\Program Files\\Zipped\\zipped.exe\" \"%1\""
+
+; ==============================================================================
+; Right-Click Context Menu for Folders
+; ==============================================================================
+
+[HKEY_CLASSES_ROOT\Directory\shell\ZippedCompress]
+@="Compress with Zipped"
+"Icon"="C:\\Program Files\\Zipped\\zipped.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ZippedCompress\command]
+@="\"C:\\Program Files\\Zipped\\zipped.exe\" \"%1\""
+
+; ==============================================================================
+; Installation Complete!
+; ==============================================================================
+; After running this:
+; - .zipped files will open with Zipped
+; - Right-click any file → "Compress with Zipped"
+; - Right-click any folder → "Compress with Zipped"
+;

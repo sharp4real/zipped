@@ -7,7 +7,7 @@
 
 A secure, lightweight file compression and encryption tool for Windows with AES-256 encryption and DEFLATE compression. Completely offline and privacy-focused.
 
-![Zipped Screenshot](screenshot.png)
+![Zipped Screenshot](https://github.com/sharp4real/zipped/blob/main/Screenshot%202025-12-28%20195645.png?raw=true)
 
 ## Features
 
